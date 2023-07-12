@@ -45,7 +45,8 @@
             "_TextInput-b0c3b9b3.js",
             "_sweetalert2.all-5d007978.js"
         ],
-        "isDynamicEntry": true
+        "isDynamicEntry": true,
+        "src": "resources/js/Pages/Invitacion/Mostrar.vue"
     },
     "_PrimaryButton-c20b9b9a.js": {
         "file": "assets/PrimaryButton-c20b9b9a.js",
