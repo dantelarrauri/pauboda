@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'FeENsc2';
+    src: url('/fonts/FeENsc2.ttf') format('truetype');
+    /* Agrega más formatos si es necesario */
+    font-weight: normal;
+    font-style: normal;
+}
