@@ -4,8 +4,10 @@ import Swal from "sweetalert2";
 import { Head } from "@inertiajs/vue3";
 import { useForm, Link } from "@inertiajs/vue3";
 import ModalGuest from "@/Components/ModalGuest.vue";
-
 import ClipboardJS from 'clipboard';
+import Toast from "vue-toastification";
+import "vue-toastification/dist/index.css";
+import { useToast } from "vue-toastification";
 
 const form = useForm({});
 const props = defineProps({
@@ -34,8 +36,12 @@ const openModal = (invitado) => {
     document.getElementById('nombre2').value = invitado?.nombre;
     document.getElementById('confirmacion2').checked = invitado?.confirmacion;
     document.getElementById('protegido2').checked = invitado?.protegido;
+    if (document.getElementById('protegido1')) {
+        document.getElementById('protegido1').checked = false;
+    };
+    
 };
-
+const toast = useToast();
 
 
 
@@ -46,10 +52,16 @@ const  copiarEnlace = (username, Keyinvited) => {
       const clipboard = new ClipboardJS(boton, {
         text: () => enlace
       });
-
+      
       clipboard.on('success', () => {
         console.log('Enlace copiado al portapapeles: ' + enlace);
+        toast.info("I'm an info toast!");
+        
+        
+        
+        
       });
+      
 
       clipboard.on('error', () => {
         console.log('Error al copiar el enlace');
@@ -115,6 +127,7 @@ const  copiarEnlace = (username, Keyinvited) => {
                                     </td>
                                     <td>
                                         <button class="btn"  @click="copiarEnlace(invitado.username, invitado.Keyinvited)"><i class="fa-solid fa-link" ></i></button>
+                                    
                                     </td>
                                 </tr>
 
@@ -127,7 +140,7 @@ const  copiarEnlace = (username, Keyinvited) => {
             
 
             
-
+            <ToastContainer></ToastContainer>
 
             <ModalGuest :modal="'modalCreate'" :title="'Añadir invitado'" :op="'1'"></ModalGuest>
             <ModalGuest :modal="'modalEdit'" :title="'Editar invitado'" :op="'2'"></ModalGuest>

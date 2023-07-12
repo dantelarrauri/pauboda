@@ -1,0 +1,1 @@
+import{_ as e}from"./_plugin-vue_export-helper-c27b6911.js";import{o,f as s,b as c}from"./app-a8e87fc3.js";const t={},n={class:"flex justify-center p-2"},r=["src"];function a(i,_){return o(),s("div",n,[c("img",{class:"",src:"/image/ESCUDO-min.png",alt:"logo"},null,8,r)])}const m=e(t,[["render",a]]);export{m as A};

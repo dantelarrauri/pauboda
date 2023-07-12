@@ -69,7 +69,7 @@ const pdfcreator = () => {
         filename: 'documento.pdf',
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2 },
-        jsPDF: { unit: 'mm', format: [206, 1085], orientation: 'portrait' },
+        jsPDF: { unit: 'mm', format: [206, 972], orientation: 'portrait' },
 
     };
 
@@ -171,7 +171,7 @@ watch(
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap" rel="stylesheet"> .
-
+        <title>Boda Paulina y Carlos</title>
     </head>
     <!--  <template><PDFMAKER v-show="false" ref="elementToPDF" :content="enlaceqr"/></template> -->
 
@@ -225,17 +225,7 @@ watch(
                                 felicidad de nuestra unión
                             </span>
                         </div>
-                        <div class="  flex  justify-center p-2">
-                            <img class=" min-w-[19rem] max-w-[50rem] " :src="'/image/LUGARS-min.png'" alt="logo">
-                        </div>
-                        <div class="  flex  justify-center p-2">
-                            <img class=" min-w-[16rem] max-w-sm " :src="'/image/itinerarioverticalllll-min.png'" alt="logo">
-                        </div>
-                        <div class="  flex  justify-center p-2">
-                            <img class=" min-w-[20rem] max-w-sm absolute z-0  " :src="'/image/mancha-min.png'" alt="logo">
-                            <img class=" min-w-[20rem] max-w-sm relative z-1 " :src="'/image/Dresscode-min.png'" alt="logo">
-                        </div>
-                        <div class="flex p-2 text-center  justify-center flex-column items-center">
+                        <div class="flex p-2 text-center  justify-center flex-column items-center mt-11">
                             <span class=" max-w-lg "
                                 style="font-family: 'IM Fell English', serif; font-size: 25px; color: #686868;">
                                 Ven a celebrar con nosotros este
@@ -254,17 +244,25 @@ watch(
                                     2023
                                 </span>
                             </div>
-                            <span class=" max-w-lg  m-4"
-                                style="font-family: 'IM Fell English', serif; font-size: 18px; color: #686868;">
-                                En esta ocasión, nuestra invitación se extiende únicamente a mayores de edad. Agradecemos su
-                                comprensión.
-                            </span>
+                            
                         </div>
+                        <div class="  flex  justify-center items-center flex-col pl-[10rem] pr-[10rem]">
+                            <a href="https://maps.app.goo.gl/Q2FThkLVZm4N65Rm9" target="_blank"> <img class=" min-w-[20rem]  " :src="'/image/CAPILLA-min.png'" alt="logo"></a>
+                           <a href="https://maps.app.goo.gl/a4HijeE2AeD2zgWU9" target="_blank"><img class=" min-w-[20rem]" :src="'/image/SALON-min.png'" alt="logo"></a>
+                        </div>
+                        <div class="  flex  justify-center p-2">
+                            <img class=" min-w-[16rem] max-w-sm " :src="'/image/itinerarioverticalllll-min.png'" alt="logo">
+                        </div>
+                        <div class="  flex  justify-center   p-2">
+                            <img class=" min-w-[20rem] max-w-sm absolute z-0  " :src="'/image/mancha-min.png'" alt="logo">
+                            <img class=" min-w-[20rem] max-w-sm relative z-1 " :src="'/image/Dresscode-min.png'" alt="logo">
+                        </div>
+                        
 
-                        <div class="  flex  min-w-[20rem] justify-center m-4   flex-column items-center">
+                        <div class="  flex  min-w-[20rem] justify-center mt-4 mb-4   flex-column items-center">
                             <img class=" min-w-sm max-w-[15rem]  " :src="'/image/Capa2rega.png'" alt="logo">
-                            <div class="row">
-                                <div class="flex flex-col col-sm-6">
+                            
+                                <div class="flex flex-col items-center m-2">
                                     <img class=" min-w-sm max-w-[8rem]  " :src="'/image/Capa3rega.png'" alt="logo">
                                     <a class="" href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51169198"
                                         target="_blank"
@@ -274,19 +272,34 @@ watch(
                                         target="_blank"
                                         style="font-family: 'IM Fell English', serif; font-size: 18px; color: #686868;">Núm.
                                         evento: 51169198 </a>
+                                       
                                     <!--                         <img class=" min-w-[20rem] max-w-sm relative z-1 " :src="'/image/REGALOS2-min.png'" alt="logo">
-    --> <img class=" min-w-sm max-w-[8rem]  " :src="'/image/Capa4rega.png'" alt="logo">
+    -->                         
+                                </div>
+                                <div class="flex flex-col items-center m-2">
+                                    
+                                        <img class=" min-w-sm max-w-[8rem]  " :src="'/image/Capa4rega.png'" alt="logo">
                                     <a class="" href="https://amz.run/6sNm" target="_blank"
                                         style="font-family: 'IM Fell English', serif; font-size: 18px; color: #686868;">Enlace:
                                         https://amz.run/6sNm </a>
+                                    <!--                         <img class=" min-w-[20rem] max-w-sm relative z-1 " :src="'/image/REGALOS2-min.png'" alt="logo">
+    -->                         
                                 </div>
-                                <div class="col-sm-4 ">
-                                    <img class=" min-w-[5rem] max-w-[15rem]  " :src="'/image/Capa5rega.png'" alt="logo">
-                                </div>
-                            </div>
+                                
+                            
+                            <img class=" min-w-[5rem] max-w-[15rem]  " :src="'/image/Capa5rega.png'" alt="logo">
                             <!--                         <img class=" min-w-[20rem] max-w-sm relative z-1 " :src="'/image/REGALOS2-min.png'" alt="logo">
  -->
                         </div>
+                        <div class="flex p-2 text-center  justify-center flex-column items-center">
+                            
+                            <span class=" max-w-lg  m-4"
+                                style="font-family: 'IM Fell English', serif; font-size: 18px; color: #686868; font-weight: 700;">
+                                En esta ocasión, nuestra invitación se extiende únicamente a mayores de edad. Agradecemos su
+                                comprensión.
+                            </span>
+                        </div>
+
                         <div class="  flex  justify-center  p-2">
                             <img class=" min-w-sm max-w-[15rem]  " :src="'/image/Pase_personal_.png'" alt="logo">
                         </div>

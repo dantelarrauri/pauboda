@@ -16,9 +16,9 @@ const props = defineProps({
 
 const form = useForm({
     id: props.invitacion?.id,
-    nombre: props.invitacion?.nombre || "Ingresa tú nombre",
-    confirmacion: props.invitacion?.confirmacion || false,
-    protegido: props.invitacion?.protegido || false,
+    nombre: props.invitacion?.nombre ,
+    confirmacion: props.invitacion?.confirmacion ,
+    protegido: props.invitacion?.protegido ,
 });
 
 const save = () => {
@@ -58,7 +58,7 @@ const cerrar = () => {
                                 <i class="fa-solid fa-person"></i>
                             </span>
                             <TextInput :id="'nombre' + op" class="form-control" type="text" name="nombre"
-                                v-model="form.nombre" maxlength="120" placeholder="Nombre" :required="form.protegido">
+                                v-model="form.nombre" maxlength="120" placeholder="Nombre" >
                             </TextInput>
                         </div>
                         <div v-if="form.errors.nombre" class="text-sm text-danger">
